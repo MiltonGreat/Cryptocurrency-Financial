@@ -32,7 +32,7 @@ Feature Engineering:
 - R-squared: 0.8642
 
 These results suggest the model has a good fit and is able to predict cryptocurrency price movements with reasonable accuracy.
-Backtesting
+
 
 ### Source
 
