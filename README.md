@@ -25,7 +25,7 @@ The dataset contains the following columns:
 
 Data: Cryptocurrency market data, including daily returns, trading volumes, and volatility indices.
 
-#### Methods:
+#### Methods
 
 1. Data Preprocessing:
 - Handled missing values in the dataset by dropping or converting invalid entries.
@@ -40,44 +40,6 @@ Data: Cryptocurrency market data, including daily returns, trading volumes, and 
 - A trading strategy was backtested based on predicted daily price movements.
 - The model makes a prediction for whether the price will go up or down and takes a position accordingly.
 - Strategy performance was evaluated by calculating cumulative returns, Sharpe ratio, total return, and maximum drawdown.
-
-### Results
-
-- Cross-validation scores: The model achieved a mean cross-validation score of 1.00 on the Random Forest model, indicating high predictive accuracy.
-- Accuracy: The Random Forest model achieved an accuracy of 1.00 on the test set, demonstrating strong classification performance.
-
-Trading Strategy:
-- The logistic regression-based trading strategy achieved an accuracy of 0.74 in predicting price movements.
-- The strategy's backtested total return was exceptionally high, but with a significant drawdown of 67.66%, highlighting the volatility of cryptocurrency markets.
-
-### Key Insights
-
-- Predictive models can effectively identify price movement trends, but their performance is contingent on market stability and the inclusion of robust risk management strategies.
-- Algorithmic trading strategies need to be adaptive, especially during periods of extreme market volatility.
-- Although the strategy was profitable in stable conditions, more advanced techniques like sentiment analysis or reinforcement learning could enhance the strategy's adaptability and robustness.
-
-### Future Directions
-
-- Sentiment Analysis: Incorporating social media sentiment or news data to improve predictions and enhance the model’s understanding of market-moving events.
-- Reinforcement Learning: Exploring reinforcement learning to dynamically adapt trading strategies based on real-time market conditions and feedback.
-- Additional Models: Investigating the potential of other machine learning models, such as LSTM or other time-series-based models, to capture long-term dependencies in the data.
-
-### Overview
-
-The project uses historical cryptocurrency data (Open, High, Low, Close, Volume, and Market Cap) to build predictive models for assessing the next day's return. The model is trained using various technical indicators, including moving averages and lag features, to predict price movements.
-
-### Dataset
-
-The dataset contains the following columns:
-
-- Currency: The name of the cryptocurrency (e.g., bitcoin, ethereum, etc.)
-- Date: The date of the observation.
-- Open: The opening price for the day.
-- High: The highest price reached during the day.
-- Low: The lowest price reached during the day.
-- Close: The closing price for the day.
-- Volume: The trading volume during the day.
-- Market Cap: The market capitalization of the cryptocurrency on the given date.
 
 ### Data Preprocessing
 
@@ -101,6 +63,27 @@ Sharpe Ratio:
 Performance Metrics:
 - Total Return: The total return of the strategy was extremely high (based on a backtest).
 - Maximum Drawdown: The maximum drawdown observed for the strategy was -67.66%, highlighting the risk involved in cryptocurrency trading.
+
+### Results
+
+- Cross-validation scores: The model achieved a mean cross-validation score of 1.00 on the Random Forest model, indicating high predictive accuracy.
+- Accuracy: The Random Forest model achieved an accuracy of 1.00 on the test set, demonstrating strong classification performance.
+
+Trading Strategy:
+- The logistic regression-based trading strategy achieved an accuracy of 0.74 in predicting price movements.
+- The strategy's backtested total return was exceptionally high, but with a significant drawdown of 67.66%, highlighting the volatility of cryptocurrency markets.
+
+### Key Insights
+
+- Predictive models can effectively identify price movement trends, but their performance is contingent on market stability and the inclusion of robust risk management strategies.
+- Algorithmic trading strategies need to be adaptive, especially during periods of extreme market volatility.
+- Although the strategy was profitable in stable conditions, more advanced techniques like sentiment analysis or reinforcement learning could enhance the strategy's adaptability and robustness.
+
+### Future Directions
+
+- Sentiment Analysis: Incorporating social media sentiment or news data to improve predictions and enhance the model’s understanding of market-moving events.
+- Reinforcement Learning: Exploring reinforcement learning to dynamically adapt trading strategies based on real-time market conditions and feedback.
+- Additional Models: Investigating the potential of other machine learning models, such as LSTM or other time-series-based models, to capture long-term dependencies in the data.
 
 ### Source
 
